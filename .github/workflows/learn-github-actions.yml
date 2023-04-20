@@ -1,1 +1,13 @@
 name: learn-github-actions
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  unit-tests:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: ./scripts/tests.sh
