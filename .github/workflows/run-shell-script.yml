@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: Run tests shell script
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - "main"
 
 jobs:
-  unit-tests:
+  run-tests-shell-script:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
