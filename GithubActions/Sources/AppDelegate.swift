@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   ) -> Bool {
     let window: UIWindow = .init(frame: UIScreen.main.bounds)
     window.rootViewController = ViewController()
+    window.backgroundColor = .white
     window.makeKeyAndVisible()
     self.window = window
     return true
