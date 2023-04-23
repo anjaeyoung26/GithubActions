@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          xcodebuild test \
-            -project GithubActions.xcodeproj \
-            -scheme GithubActions \
-            -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.0'
+          xcodebuild clean test \
+          -project GithubActions.xcodeproj \
+          -scheme GithubActions \
+          -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest'
